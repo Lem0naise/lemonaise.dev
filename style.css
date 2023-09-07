@@ -1,0 +1,58 @@
+:root {
+	--background: #121012;
+	--menu: #121012;
+	--text: #d8d6d3;
+	--text-hover: #d8d6d388;
+	--item: #252425;
+	--item-background-2: #22202200;
+	--item-background: #222022;
+}
+body {
+    background-color: var(--background);
+    overflow: hidden;
+}
+#contwrapper {
+    position: absolute;
+    margin-top: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+#cont {
+    width: min(70vw, 70vh);
+    height: min(70vw, 70vh);
+    overflow: hidden;
+}
+#conewrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw; 
+    overflow: hidden;
+}
+#cone {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    margin-bottom: 20vh;
+    border-left: 80vh solid transparent;
+    border-right: 80vh solid transparent;
+    border-bottom: 100vh solid white;
+    border-radius: 50%;
+    filter: blur(900px);
+}
+#spotlight { 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: radial-gradient(
+        circle,
+        transparent 160px,
+        rgba(0, 0, 0, 1) 200px
+    );
+}
