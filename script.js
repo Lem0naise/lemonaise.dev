@@ -1,11 +1,20 @@
-//DOM load event
-window.addEventListener("DOMContentLoaded", () => {
-    const spotlight = document.querySelector('#spotlight');
-    let spotlightSize = 'transparent 160px, black 200px)';
+function grow(){
+    let c = document.getElementById("cont");
+    let b = document.getElementById("bod");
+    c.style.scale = "1.1 1.1"
+    c.style.opacity = 1;
+    setTimeout(() => {
+        b.style.opacity = 1;
+        b.style.scale = "1 1"
+    }, 900);
+    setTimeout(() => {
+        c.style.top = "7%";
+        c.style.scale = "0.8 0.8"
+        c.style.opacity = 0.7;
+    }, 1000);
+    setTimeout(() => {
+        //c.style.textDecoration = "underline";
+    }, 1200);
 
-    window.addEventListener('mousemove', e => updateSpotlight(e));
-
-    function updateSpotlight(e) {
-        spotlight.style.backgroundImage = `radial-gradient(circle at ${e.pageX / window.innerWidth * 100}% ${e.pageY / window.innerHeight * 100}%, ${spotlightSize}`;
-    }
-});
+}
+window.onload = grow
