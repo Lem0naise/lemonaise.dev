@@ -65,3 +65,23 @@ body {
 .song {
     scale: 0.5 0.5;
 }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    #bod {
+        width: 95vw;
+        margin-left: 2vw;
+    }
+    .title {
+        font-size: 8vw;
+    }
+    .text {
+        font-size: 5vw;
+    }
+    #cont {
+        font-size: 12vw;
+    }
+}
