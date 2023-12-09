@@ -53,16 +53,22 @@ body {
 
 .item-b {
     padding: 20px;
-
+    transform: translateX(0);
+    transition: transform .5s;
+}
+.item-b:hover {
+    transform: translateX(10px);
+}
+.item-b:hover .title{
+    transform: translateX(10px); 
+    opacity: 0.8;
 }
 .title {
- 
-
     font-size: 40px;
     font-family: Inconsolata;
     margin: 0;
     margin-top: 50px;
-
+    transition: transform .5s, opacity .5s;
 }
 .text {
     font-size: 20px;
